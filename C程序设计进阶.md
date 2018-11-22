@@ -272,7 +272,7 @@ getInt1()被释放掉。getInt2()占据了getInt1()的位置。所以打印*p的
 
 ![image.png](https://upload-images.jianshu.io/upload_images/3128142-b61dad07dc0d39fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![image.png](https://upload-images.jianshu.io/upload_images/3128142-9032a9bf92418e98.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/3128142-4fcedf8d90e27afd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 ### 静态局部变量
