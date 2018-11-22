@@ -230,9 +230,7 @@ a 是 数组首元素的地址指针。a + 1 是移一个基类型。
 
 ![image.png](https://upload-images.jianshu.io/upload_images/3128142-829cbfcf8807620e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![1542880050964](d:\user\80003415\Application Data\Typora\typora-user-images\1542880050964.png)
-
-
+![image.png](https://upload-images.jianshu.io/upload_images/3128142-bd9b86d14082ffba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![image.png](https://upload-images.jianshu.io/upload_images/3128142-69970465c2b18fa3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
