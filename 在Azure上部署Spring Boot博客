@@ -53,6 +53,6 @@ pre标签添加white-space: pre-wrap;
 
 要删除掉log.file
 
-`[root@CentOS-based7-5 olc]# java -jar blog-search-1.0.0.jar > log.file 2>&1 &`
+[root@CentOS-based7-5 olc]# nohup java -jar blog-search-1.0.0.jar > log.file 2>&1 &
 
 访问http://13.75.64.85:8080/blogs
