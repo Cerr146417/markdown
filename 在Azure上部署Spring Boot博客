@@ -1,0 +1,58 @@
+## 一、搭建服务器
+
+#### 1. 在Azure上申请服务器
+
+申请一台CentOS-based7.5服务器，地区选择East Asia，延迟低。
+
+#### 2. 安装Docker
+
+安装Mysql5.7与ElasticSearch2.4.4。
+
+参考文档后期补。
+
+## 二、原博客项目的Bugs
+
+#### 1.修改CSS标签样式
+
+pre标签添加white-space: pre-wrap;
+
+.hljs标签添加word-break: break-all;
+
+否则段落不换行，影响阅读效率。
+
+#### 2.原博客代码不高亮
+
+需要手动F12复制生成HTML，后期改为自动生成。
+
+#### 3.请求转发找不到路径问题
+
+本地测试时没有问题，部署时会出现找不到路径问题。需要将SpringMVC中的return "/index";中的/去掉。
+
+#### 4.每次启动清空数据库问题
+
+在配置文件中将下面的注释掉
+
+`#spring.jpa.hibernate.ddl-auto=create-drop`
+
+#### 5.gradle进行build打包失败
+
+需要将test文件夹删除
+
+#### 6.数据库与EC连接
+要使用localhost而不是IP地址。否则走的是外网而不是内网，影响效率。
+
+## 三、部署项目到服务器
+
+#### 1.重启docker镜像实例
+
+`[root@CentOS-based7-5 olc]# docker ps -a`
+
+`[root@CentOS-based7-5 olc]# docker start bc993ce3bf9c`
+
+#### 2.重启jar
+
+要删除掉log.file
+
+`[root@CentOS-based7-5 olc]# java -jar blog-search-1.0.0.jar > log.file 2>&1 &`
+
+访问http://13.75.64.85:8080/blogs
